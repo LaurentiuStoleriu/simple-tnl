@@ -1,0 +1,4 @@
+/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/cmake/build/CMakeFiles/example-host.dir
+/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/cmake/build/CMakeFiles/example-cuda.dir
+/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/cmake/build/CMakeFiles/edit_cache.dir
+/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/cmake/build/CMakeFiles/rebuild_cache.dir

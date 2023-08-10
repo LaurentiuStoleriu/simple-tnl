@@ -1,0 +1,5 @@
+# ninja log v5
+0	444	1691401550119983996	CMakeFiles/example-host.dir/example-host.cpp.o	f36e42922470d419
+444	601	1691401550269983941	example-host	4eae91c27c16e6ea
+1	1630	1691401551299983545	CMakeFiles/example-cuda.dir/example-cuda.cu.o	ad29670c9549c812
+1630	1784	1691401551459983455	example-cuda	9993b1c78baa17e0

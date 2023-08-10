@@ -87,8 +87,8 @@ int main( int argc, char* argv[] )
 
     std::cout << file_name.getString();
 
-    //solveHeatEquation< TNL::Devices::Host >( file_name.getString() );
-#ifdef __CUDACC__
-    solveHeatEquation< TNL::Devices::Cuda >( file_name.getString() );
-#endif
+    solveHeatEquation< TNL::Devices::Host >( file_name.getString() );
+//#ifdef __CUDACC__
+//    solveHeatEquation< TNL::Devices::Cuda >( file_name.getString() );
+//#endif
 }

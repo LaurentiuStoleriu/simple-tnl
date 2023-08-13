@@ -1,11 +1,19 @@
 # ninja log v5
-1	1425	1691897453645203629	CMakeFiles/example-host.dir/example-host.cpp.o	dcdec52207affbde
-1426	2046	1691897454265203420	example-host	17e753f129314ba5
-0	5144	1691896975865372013	CMakeFiles/example-cuda.dir/example-cuda.cu.o	9d26edb5c4f3b14e
-5144	5679	1691896976405371788	example-cuda	9993b1c78baa17e0
-1	1632	1691897776275095679	CMakeFiles/example-host.dir/example-host.cpp.o	dcdec52207affbde
-1632	2251	1691897776895095454	example-host	17e753f129314ba5
-1	1407	1691897827155079324	CMakeFiles/example-host.dir/example-host.cpp.o	dcdec52207affbde
-1408	1963	1691897827715079202	example-host	17e753f129314ba5
 0	1297	1691897956935041557	CMakeFiles/example-host.dir/example-host.cpp.o	dcdec52207affbde
 1297	1889	1691897957525041480	example-host	17e753f129314ba5
+0	5144	1691896975865372013	CMakeFiles/example-cuda.dir/example-cuda.cu.o	9d26edb5c4f3b14e
+5144	5679	1691896976405371788	example-cuda	9993b1c78baa17e0
+6	1310	1691912911129249278	CMakeFiles/example-host.dir/example-host.cpp.o	dcdec52207affbde
+1310	1492	1691912911309249216	example-host	17e753f129314ba5
+1	1161	1691913292709129302	CMakeFiles/example-host.dir/example-host.cpp.o	dcdec52207affbde
+1161	1354	1691913292899129243	example-host	17e753f129314ba5
+1	1253	1691913763878969097	CMakeFiles/example-host.dir/example-host.cpp.o	dcdec52207affbde
+1253	1446	1691913764068969036	example-host	17e753f129314ba5
+1	1101	1691913809748954138	CMakeFiles/example-host.dir/example-host.cpp.o	dcdec52207affbde
+1101	1288	1691913809938954075	example-host	17e753f129314ba5
+0	1126	1691913832878946621	CMakeFiles/example-host.dir/example-host.cpp.o	dcdec52207affbde
+1126	1324	1691913833078946557	example-host	17e753f129314ba5
+1	1171	1691913850538941046	CMakeFiles/example-host.dir/example-host.cpp.o	dcdec52207affbde
+1172	1350	1691913850718940988	example-host	17e753f129314ba5
+0	1522	1691913897728925574	CMakeFiles/example-host.dir/example-host.cpp.o	dcdec52207affbde
+1522	1861	1691913898068925463	example-host	17e753f129314ba5

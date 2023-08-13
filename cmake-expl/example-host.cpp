@@ -1,35 +1,38 @@
 #include <iostream>
 #include <TNL/Containers/Vector.h>
+#include <TNL/Containers/StaticArray.h>
 #include <TNL/Algorithms/parallelFor.h>
 
 using namespace TNL;
 using namespace TNL::Containers;
 using namespace TNL::Algorithms;
 
-/****
- * Set all elements of the vector v to the constant c.
- */
 template< typename Device >
-void initVector( Vector< double, Device > &v, const double &c )
+void initMeshFunction( const int xSize, const int ySize, const int zSize, Vector< double, Device > &v, const double &c)
 {
     auto view = v.getView();
-    auto init = [=] __cuda_callable__ ( int i ) mutable
+    auto init = [=] __cuda_callable__ ( const StaticArray< 3, int > &i ) mutable
     {
-        view[ i ] = c;
+        view[ ( i.z() * ySize + i.y() ) * xSize + i.x() ] = c;
     };
-    parallelFor< Device >( 0, v.getSize(), init );
+    StaticArray< 3, int > begin{ 0, 0, 0 };
+    StaticArray< 3, int > end{ xSize, ySize, zSize };
+    parallelFor< Device >( begin, end, init );
 }
 
 int main( int argc, char* argv[] )
 {
-    Vector< double, Devices::Host > host_v( 10 );
-    initVector( host_v, 1.0 );
+    const int xSize( 10 ), ySize( 10 ), zSize( 10 );
+    const int size = xSize * ySize * zSize;
+
+    Vector< double, Devices::Host > host_v( size );
+    initMeshFunction( xSize, ySize, zSize, host_v, 1.0 );
     std::cout << "host_v = " << host_v << std::endl;
 
 #ifdef __CUDACC__
-    Vector< double, Devices::Cuda > cuda_v( 10 );
-    initVector( cuda_v, 1.0 );
-    std::cout << "cuda_v = " << cuda_v << std::endl;
+    Vector< double, Devices::Cuda > cuda_v( size );
+    initMeshFunction( xSize, ySize, zSize, cuda_v, 1.0 );
 #endif
+
     return EXIT_SUCCESS;
 }

@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build",
+  "command": "/usr/bin/g++ -DHAVE_OPENMP -isystem /home/lali/.local/include  -Wall -O3 -std=c++17 -fdiagnostics-color -fopenmp -o CMakeFiles/example-host.dir/example-host.cpp.o -c /home/lali/TITAN-ROG-sync/CUDA/simple-tnl/cmake-expl/example-host.cpp",
+  "file": "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/cmake-expl/example-host.cpp",
+  "output": "CMakeFiles/example-host.dir/example-host.cpp.o"
+},
+{
+  "directory": "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -isystem /home/lali/.local/include  -Wall -O3 -std=c++17 \"--generate-code=arch=compute_52,code=[compute_52,sm_52]\" --expt-relaxed-constexpr --extended-lambda --default-stream per-thread -Wno-deprecated-gpu-targets -Xcudafe --diag_suppress=code_is_unreachable -Xcudafe --diag_suppress=loop_not_reachable -Xcudafe --diag_suppress=implicit_return_from_non_void_function -Xcudafe --diag_suppress=unsigned_compare_with_zero --display-error-number -Xcudafe --diag_suppress=esa_on_defaulted_function_ignored -fdiagnostics-color -x cu -c /home/lali/TITAN-ROG-sync/CUDA/simple-tnl/cmake-expl/example-cuda.cu -o CMakeFiles/example-cuda.dir/example-cuda.cu.o",
+  "file": "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/cmake-expl/example-cuda.cu",
+  "output": "CMakeFiles/example-cuda.dir/example-cuda.cu.o"
+}
+]

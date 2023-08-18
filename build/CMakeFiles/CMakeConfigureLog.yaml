@@ -1579,3 +1579,186 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/home/lali/.local/lib/cmake/TNL/TNLConfig.cmake:103 (find_package)"
+      - "CMakeLists.txt:26 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-QUVYhN"
+      binary: "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-QUVYhN"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lali/.local/lib/cmake/TNL/Modules"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-QUVYhN'
+        
+        Run Build Command(s): /home/lali/anaconda3/bin/ninja -v cmTC_8bb12
+        [1/2] /usr/bin/g++  -isystem /home/lali/anaconda3/include -Wall  -std=c++17 -o CMakeFiles/cmTC_8bb12.dir/test_mpi.cpp.o -c /home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-QUVYhN/test_mpi.cpp
+        [2/2] : && /usr/bin/g++ -Wall -Wl,-rpath,/home/lali/anaconda3/lib -Wl,-rpath -Wl,/home/lali/anaconda3/lib -Wl,--enable-new-dtags CMakeFiles/cmTC_8bb12.dir/test_mpi.cpp.o -o cmTC_8bb12  -Wl,-rpath,/home/lali/anaconda3/lib  /home/lali/anaconda3/lib/libmpicxx.so  /home/lali/anaconda3/lib/libmpi.so && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "/home/lali/.local/lib/cmake/TNL/TNLConfig.cmake:103 (find_package)"
+      - "CMakeLists.txt:26 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-4TG8Lo"
+      binary: "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-4TG8Lo"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lali/.local/lib/cmake/TNL/Modules"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-4TG8Lo'
+        
+        Run Build Command(s): /home/lali/anaconda3/bin/ninja -v cmTC_67ca1
+        [1/2] /usr/bin/g++  -isystem /home/lali/anaconda3/include -Wall  -std=c++17 -o CMakeFiles/cmTC_67ca1.dir/test_mpi.cpp.o -c /home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-4TG8Lo/test_mpi.cpp
+        [2/2] : && /usr/bin/g++ -Wall -Wl,-rpath,/home/lali/anaconda3/lib -Wl,-rpath -Wl,/home/lali/anaconda3/lib -Wl,--enable-new-dtags CMakeFiles/cmTC_67ca1.dir/test_mpi.cpp.o -o cmTC_67ca1  -Wl,-rpath,/home/lali/anaconda3/lib  /home/lali/anaconda3/lib/libmpicxx.so  /home/lali/anaconda3/lib/libmpi.so && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/home/lali/.local/lib/cmake/TNL/TNLConfig.cmake:103 (find_package)"
+      - "CMakeLists.txt:26 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-Z3CjSi"
+      binary: "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-Z3CjSi"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lali/.local/lib/cmake/TNL/Modules"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-Z3CjSi'
+        
+        Run Build Command(s): /home/lali/anaconda3/bin/ninja -v cmTC_60e30
+        [1/2] /usr/bin/g++  -isystem /home/lali/anaconda3/include -Wall  -std=c++17 -o CMakeFiles/cmTC_60e30.dir/test_mpi.cpp.o -c /home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-Z3CjSi/test_mpi.cpp
+        [2/2] : && /usr/bin/g++ -Wall -Wl,-rpath,/home/lali/anaconda3/lib -Wl,-rpath -Wl,/home/lali/anaconda3/lib -Wl,--enable-new-dtags CMakeFiles/cmTC_60e30.dir/test_mpi.cpp.o -o cmTC_60e30  -Wl,-rpath,/home/lali/anaconda3/lib  /home/lali/anaconda3/lib/libmpicxx.so  /home/lali/anaconda3/lib/libmpi.so && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "/home/lali/.local/lib/cmake/TNL/TNLConfig.cmake:103 (find_package)"
+      - "CMakeLists.txt:26 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-oBjJ1c"
+      binary: "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-oBjJ1c"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: " -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lali/.local/lib/cmake/TNL/Modules"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-oBjJ1c'
+        
+        Run Build Command(s): /home/lali/anaconda3/bin/ninja -v cmTC_1f618
+        [1/2] /usr/bin/g++  -isystem /home/lali/anaconda3/include -Wall  -std=c++17 -o CMakeFiles/cmTC_1f618.dir/test_mpi.cpp.o -c /home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-oBjJ1c/test_mpi.cpp
+        [2/2] : && /usr/bin/g++ -Wall -Wl,-rpath,/home/lali/anaconda3/lib -Wl,-rpath -Wl,/home/lali/anaconda3/lib -Wl,--enable-new-dtags CMakeFiles/cmTC_1f618.dir/test_mpi.cpp.o -o cmTC_1f618  -Wl,-rpath,/home/lali/anaconda3/lib  /home/lali/anaconda3/lib/libmpicxx.so  /home/lali/anaconda3/lib/libmpi.so && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/home/lali/.local/lib/cmake/TNL/TNLConfig.cmake:103 (find_package)"
+      - "CMakeLists.txt:26 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-CubKG4"
+      binary: "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-CubKG4"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: " -Wall -fopenmp"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lali/.local/lib/cmake/TNL/Modules"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-CubKG4'
+        
+        Run Build Command(s): /home/lali/anaconda3/bin/ninja -v cmTC_20294
+        [1/2] /usr/bin/g++  -isystem /home/lali/anaconda3/include -Wall -fopenmp  -std=c++17 -o CMakeFiles/cmTC_20294.dir/test_mpi.cpp.o -c /home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-CubKG4/test_mpi.cpp
+        [2/2] : && /usr/bin/g++ -Wall -fopenmp -Wl,-rpath,/home/lali/anaconda3/lib -Wl,-rpath -Wl,/home/lali/anaconda3/lib -Wl,--enable-new-dtags CMakeFiles/cmTC_20294.dir/test_mpi.cpp.o -o cmTC_20294  -Wl,-rpath,/home/lali/anaconda3/lib  /home/lali/anaconda3/lib/libmpicxx.so  /home/lali/anaconda3/lib/libmpi.so && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/cmake/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "/home/lali/.local/lib/cmake/TNL/TNLConfig.cmake:103 (find_package)"
+      - "CMakeLists.txt:26 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-uXzipQ"
+      binary: "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-uXzipQ"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CXX_FLAGS: " -Wall -fopenmp"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lali/.local/lib/cmake/TNL/Modules"
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-uXzipQ'
+        
+        Run Build Command(s): /home/lali/anaconda3/bin/ninja -v cmTC_12aa6
+        [1/2] /usr/bin/g++  -isystem /home/lali/anaconda3/include -Wall -fopenmp  -std=c++17 -o CMakeFiles/cmTC_12aa6.dir/test_mpi.cpp.o -c /home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build/CMakeFiles/CMakeScratch/TryCompile-uXzipQ/test_mpi.cpp
+        [2/2] : && /usr/bin/g++ -Wall -fopenmp -Wl,-rpath,/home/lali/anaconda3/lib -Wl,-rpath -Wl,/home/lali/anaconda3/lib -Wl,--enable-new-dtags CMakeFiles/cmTC_12aa6.dir/test_mpi.cpp.o -o cmTC_12aa6  -Wl,-rpath,/home/lali/anaconda3/lib  /home/lali/anaconda3/lib/libmpicxx.so  /home/lali/anaconda3/lib/libmpi.so && :
+        
+      exitCode: 0
+...

@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_example-host: phony || CMakeFiles/exampl
 build CMakeFiles/example-host.dir/example-host.cpp.o: CXX_COMPILER__example-host_unscanned_Release /home/lali/TITAN-ROG-sync/CUDA/simple-tnl/cmake-expl/example-host.cpp || cmake_object_order_depends_target_example-host
   DEFINES = -DHAVE_OPENMP
   DEP_FILE = CMakeFiles/example-host.dir/example-host.cpp.o.d
-  FLAGS = -Wall -O3 -std=c++17 -fdiagnostics-color -fopenmp
+  FLAGS = -Wall -fopenmp -O3 -std=c++17 -fdiagnostics-color -fopenmp
   INCLUDES = -isystem /home/lali/.local/include
   OBJECT_DIR = CMakeFiles/example-host.dir
   OBJECT_FILE_DIR = CMakeFiles/example-host.dir
@@ -66,7 +66,7 @@ build CMakeFiles/example-host.dir/example-host.cpp.o: CXX_COMPILER__example-host
 # Link the executable example-host
 
 build example-host: CXX_EXECUTABLE_LINKER__example-host_Release CMakeFiles/example-host.dir/example-host.cpp.o | /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so /usr/lib/x86_64-linux-gnu/libpthread.a
-  FLAGS = -Wall -O3
+  FLAGS = -Wall -fopenmp -O3
   LINK_LIBRARIES = /usr/lib/gcc/x86_64-linux-gnu/11/libgomp.so  /usr/lib/x86_64-linux-gnu/libpthread.a
   OBJECT_DIR = CMakeFiles/example-host.dir
   POST_BUILD = :

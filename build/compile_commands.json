@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/build",
-  "command": "/usr/bin/g++ -DHAVE_OPENMP -isystem /home/lali/.local/include  -Wall -O3 -std=c++17 -fdiagnostics-color -fopenmp -o CMakeFiles/example-host.dir/example-host.cpp.o -c /home/lali/TITAN-ROG-sync/CUDA/simple-tnl/cmake-expl/example-host.cpp",
+  "command": "/usr/bin/g++ -DHAVE_OPENMP -isystem /home/lali/.local/include  -Wall -fopenmp -O3 -std=c++17 -fdiagnostics-color -fopenmp -o CMakeFiles/example-host.dir/example-host.cpp.o -c /home/lali/TITAN-ROG-sync/CUDA/simple-tnl/cmake-expl/example-host.cpp",
   "file": "/home/lali/TITAN-ROG-sync/CUDA/simple-tnl/cmake-expl/example-host.cpp",
   "output": "CMakeFiles/example-host.dir/example-host.cpp.o"
 },
